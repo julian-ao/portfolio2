@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+:root {
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--purple), var(--violet), var(--pink), var(--purple));
+  background-size: 200%;
+}
+
+.from-purple-600 {
+  --gradient-from-color: #7b1fa2;
+}
+
+.via-violet-600 {
+  --gradient-via-color: #673ab7;
+}
+
+.to-pink-600 {
+  --gradient-to-color: #f48fb1;
+}
+
+.bg-clip-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animate-background-pan {
+  animation: background-pan 3s linear infinite;
+}
