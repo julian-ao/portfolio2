@@ -8,11 +8,11 @@ import { Projects } from "./components/projects";
 export const App = () => {
   return (
     <Background>
-      <Navbar/>
-      <Intro/>
-      <About/>
-      <Projects/>
-      <Footer/>
+      <Navbar />
+      <Intro />
+      <About />
+      <Projects />
+      <Footer />
     </Background>
   );
-}
+};

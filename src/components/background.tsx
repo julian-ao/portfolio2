@@ -8,37 +8,46 @@ interface BackgroundProps {
 export const Background: preact.FunctionComponent<BackgroundProps> = ({
   children,
 }) => {
-
-  // TODO: better dots
   useEffect(() => {
-    const numRows = 20;
-    const numCols = numRows * 2;
+    const numRows = 25;
     const container = document.getElementById("dots-container");
 
-    for (let row = 0; row < numRows; row++) {
-      for (let col = 0; col < numCols; col++) {
-        const dot = document.createElement("div");
-        dot.classList.add(
-          "bg-gray-400",
-          "w-[2px]",
-          "aspect-square",
-          "rounded-full",
-          "absolute"
-        );
-        dot.style.top = `${(row * 100) / numRows}%`;
-        dot.style.left = `${(col * 100) / numCols}%`;
-        container?.appendChild(dot);
+    const handleResize = () => {
+      let numCols = numRows * (window.innerWidth / window.innerHeight);
+      console.log(window.innerWidth / window.innerHeight);
+      // Remove the existing dots before adding new ones on resize
+      while (container?.firstChild) {
+        container.removeChild(container.firstChild);
       }
-    }
+
+      for (let row = 0; row < numRows; row++) {
+        for (let col = 0; col < numCols; col++) {
+          const dot = document.createElement("div");
+          dot.classList.add(
+            "bg-gray-400",
+            "w-[2px]",
+            "aspect-square",
+            "rounded-full",
+            "absolute",
+          );
+          dot.style.top = `${(row * 100) / numRows}%`;
+          dot.style.left = `${(col * 100) / numCols}%`;
+          container?.appendChild(dot);
+        }
+      }
+    };
+
+    handleResize(); // Call the handleResize function initially and add an event listener
+    window.addEventListener("resize", handleResize);
   }, []);
 
   return (
-    <div className="relative h-screen w-screen overflow-x-hidden bg-cover bg-opacity-25 bg-no-repeat bg-[url('./src/assets/background-colors.jpg')] flex flex-col items-center font-manrope -z-20 text-[#333333]">
+    <div className="h-screen w-screen overflow-x-hidden bg-cover bg-opacity-25 bg-no-repeat bg-[url('./src/assets/background-colors.jpg')] font-manrope text-[#333333] flex place-content-center">
       <div
         id="dots-container"
-        className="fixed top-0 left-0 w-screen h-screen pointer-events-none -z-10"
+        className="top-0 left-0 w-screen h-screen fixed"
       />
-      {children}
+      <div className="relative w-full">{children}</div>
     </div>
   );
 };

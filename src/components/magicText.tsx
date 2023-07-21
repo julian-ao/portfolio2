@@ -24,7 +24,6 @@ export const MagicText: preact.FunctionComponent<MagicTextProps> = ({
 
         return () => clearTimeout(timeout);
       } else {
-        // Wait for a second before starting backspacing
         setTimeout(() => {
           setWriting(false);
         }, 2000); // Adjust the pause duration after writing each string
@@ -32,7 +31,9 @@ export const MagicText: preact.FunctionComponent<MagicTextProps> = ({
     } else {
       if (displayText.length === 0) {
         setTimeout(() => {
-          setCurrentTextIndex((prevIndex) => (prevIndex + 1) % textArray.length);
+          setCurrentTextIndex(
+            (prevIndex) => (prevIndex + 1) % textArray.length,
+          );
           setWriting(true);
         }, 0); // Adjust the pause duration after writing each string
       } else {
@@ -47,7 +48,7 @@ export const MagicText: preact.FunctionComponent<MagicTextProps> = ({
   }, [currentTextIndex, textArray, writing, currentIndex, displayText]);
 
   return (
-    <span className="h-[60px] animate-background-pan bg-gradient-to-r from-purple-600 via-violet-600 to-pink-600 bg-clip-text text-transparent whitespace-nowrap font-bold text-6xl">
+    <span className="h-[72px] animate-background-pan bg-gradient-to-r from-purple-600 via-violet-600 to-pink-600 bg-clip-text text-transparent whitespace-nowrap font-bold text-7xl my-10">
       {displayText}
     </span>
   );
