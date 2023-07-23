@@ -1,31 +1,45 @@
-const aboutText = [
-  {
-    title: "Introduction",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    title: "Technical background",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    title: "Persoal traits",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-];
+import { aboutText } from "../constants";
+import { Rocket } from "../assets/icons/rocket";
+import { Code } from "../assets/icons/code";
+import { User } from "../assets/icons/user";
+
+const iconClassName = "w-7 h-7 aspect-square fill-[#333]";
 
 export const About = () => {
-  return (
+  /*return (
     <div className="w-full flex place-content-center">
-      <div className="w-7/12 flex justify-between">
-        {aboutText.map((element) => {
+      <div className="w-[75%] flex justify-between">
+      {aboutText.map((element, index) => {
           return (
-            <div className="w-1/4">
-              <div className="font-bold text-xl">{element.title}</div>
-              <div>{element.text}</div>
+            <div key={index} className="w-[25%]">
+              <div className="font-semibold text-2xl font-outfit mb-2">{element.title}</div>
+              <div className="text-lg font-thin text-[rgba(0,16,36,.9)]">{element.text}</div>
             </div>
           );
         })}
       </div>
     </div>
-  );
+  );*/
+
+  return (
+    <div className="w-full flex place-content-center gap-20 mb-72">
+      {aboutText.map((element, index) => {
+
+        return (
+          <div key={index} className="w-[25%] bg-white/[.5] p-8 rounded-2xl backdrop-blur shadow-small">
+            <div className="flex gap-4 items-center mb-3">
+              {
+                element.icon === "rocket" ? <Rocket className={iconClassName} />
+                : element.icon === "code" ? <Code className={iconClassName} />
+                : element.icon === "user" ? <User className={iconClassName} />
+                : null
+              }
+              <div className="font-medium capitalize text-2xl font-outfit">{element.title}</div>
+            </div>
+            <div className="text-lg text-[rgba(0,16,36,.9)] text-justify">{element.text}</div>
+          </div>
+        );
+      })}
+    </div>
+  )
 };

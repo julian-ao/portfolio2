@@ -12,7 +12,7 @@ export const App = () => {
       <Intro />
       <About />
       <Projects />
-      <Footer />
+      <Navbar />
     </Background>
   );
 };

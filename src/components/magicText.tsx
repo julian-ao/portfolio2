@@ -48,8 +48,10 @@ export const MagicText: preact.FunctionComponent<MagicTextProps> = ({
   }, [currentTextIndex, textArray, writing, currentIndex, displayText]);
 
   return (
-    <span className="h-[72px] animate-background-pan bg-gradient-to-r from-purple-600 via-violet-600 to-pink-600 bg-clip-text text-transparent whitespace-nowrap font-bold text-7xl my-10">
-      {displayText}
-    </span>
+    <div className="flex mt-10 mb-32 items-center">
+      <span className="h-[72px] animate-background-pan bg-gradient-to-r bg-clip-text text-transparent whitespace-nowrap font-bold text-7xl">
+        {displayText}
+      </span>
+    </div>
   );
 };

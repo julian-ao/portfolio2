@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -31,18 +31,6 @@
   background-size: 200%;
 }
 
-.from-purple-600 {
-  --gradient-from-color: #7b1fa2;
-}
-
-.via-violet-600 {
-  --gradient-via-color: #673ab7;
-}
-
-.to-pink-600 {
-  --gradient-to-color: #f48fb1;
-}
-
 .bg-clip-text {
   background-clip: text;
   -webkit-background-clip: text;
@@ -51,4 +39,33 @@
 
 .animate-background-pan {
   animation: background-pan 3s linear infinite;
+}
+
+.shadow-big {
+  --tw-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+    var(--tw-shadow);
+}
+
+.shadow-small {
+  --tw-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+    var(--tw-shadow);
+}
+
+.underlineAnimation::after {
+	content: '';
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	width: 100%;
+	height: 1.5px;
+	background-color: #333;
+	transition: opacity 300ms, transform 300ms;
+	transform: translate3d(-100%, 0, 0);
+}
+
+.underlineAnimation:hover::after,
+.underlineAnimation:focus::after{
+	transform: translate3d(0, 0, 0);
 }

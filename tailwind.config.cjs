@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'manrope': ['Manrope', 'sans-serif'],
+      'outfit': ['Outfit', 'sans-serif'],
     }
   },
 };
