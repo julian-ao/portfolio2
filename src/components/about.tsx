@@ -24,22 +24,29 @@ export const About = () => {
   return (
     <div className="w-full flex place-content-center gap-20 mb-72">
       {aboutText.map((element, index) => {
-
         return (
-          <div key={index} className="w-[25%] bg-white/[.5] p-8 rounded-2xl backdrop-blur shadow-small">
+          <div
+            key={index}
+            className="w-[25%] bg-white/[.75] p-8 rounded-2xl backdrop-blur shadow-small"
+          >
             <div className="flex gap-4 items-center mb-3">
-              {
-                element.icon === "rocket" ? <Rocket className={iconClassName} />
-                : element.icon === "code" ? <Code className={iconClassName} />
-                : element.icon === "user" ? <User className={iconClassName} />
-                : null
-              }
-              <div className="font-medium capitalize text-2xl font-outfit">{element.title}</div>
+              {element.icon === "rocket" ? (
+                <Rocket className={iconClassName} />
+              ) : element.icon === "code" ? (
+                <Code className={iconClassName} />
+              ) : element.icon === "user" ? (
+                <User className={iconClassName} />
+              ) : null}
+              <div className="font-medium capitalize text-2xl font-outfit">
+                {element.title}
+              </div>
             </div>
-            <div className="text-lg text-[rgba(0,16,36,.9)] text-justify">{element.text}</div>
+            <div className="text-lg text-[rgba(0,16,36,.9)] text-justify">
+              {element.text}
+            </div>
           </div>
         );
       })}
     </div>
-  )
+  );
 };
