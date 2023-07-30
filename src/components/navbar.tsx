@@ -15,24 +15,14 @@ const openResume = () => {
 export const Navbar = () => {
   return (
     <div className="flex place-content-center">
-      <div className="flex w-full justify-between p-8 text-xl items-center">
-        <div className="tracking-wide font-normal">
+      <div className="flex w-full text-xl items-center
+        justify-end md:justify-between p-4 md:p-8">
+        <div className="tracking-wide font-normal
+          hidden md:block">
           Julian Ammouche Ottosen
         </div>
-
-        {/* <div className="flex gap-12">
-          <a href="https://www.linkedin.com/in/julian-ao/" target="_blank" className={aClassName}>
-            <Linkedin className={iconClassName} />
-          </a>
-          <a href="https://github.com/Jotto2" target="_blank" className={aClassName}>
-            <Github  className={iconClassName} />
-          </a>
-          <a href="" className={aClassName}>
-            <Resume className="w-5 cursor-pointer duration-200 fill-[#595959] hover:fill-[#fefefe]" />
-          </a>
-        </div> */}
-
-        <div className="flex gap-7 select-none">
+        <div className="flex select-none
+          gap-5 md:gap-7">
           <a href="https://www.linkedin.com/in/julian-ao/" target="_blank" className={aClassName}>
             LinkedIn
           </a>

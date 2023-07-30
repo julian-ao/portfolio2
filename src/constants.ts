@@ -15,7 +15,7 @@ export const aboutText = [
   }, // With a keen eye for detail and a strong commitment to high-quality software, I'm thrilled to share my journey and projects with you.
   // Often products becomes more complex than needed due to the fast pace of startups. Simplifying and redesigning the user experience can make the product more effective.
   {
-    title: "Technical background",
+    title: "Tech background",
     icon: "code",
     text: "I'm currently pursuing a Bachelor's in informatics, which have given me a strong software engineering foundation. Proficient in TypeScript, Python, and Java, I've completed diverse projects in web development, mobile apps, and automation.",
   }, // My expertise in [Specific Area] is evident in [Project Name], where I achieved [Briefly Describe Accomplishment].

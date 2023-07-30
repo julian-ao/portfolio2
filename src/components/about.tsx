@@ -22,12 +22,14 @@ export const About = () => {
   );*/
 
   return (
-    <div className="w-full flex place-content-center gap-20 mb-72">
+    <div className="w-full flex place-content-center gap-20
+    mb-36 xl:mb-60 flex-col xl:flex-row items-center xl:items-start">
       {aboutText.map((element, index) => {
         return (
           <div
             key={index}
-            className="w-[25%] bg-white/[.75] p-8 rounded-2xl backdrop-blur shadow-small"
+            className="bg-white/[.75] p-8 rounded-2xl backdrop-blur shadow-small
+             w-[50%] xl:w-[25%] "
           >
             <div className="flex gap-4 items-center mb-3">
               {element.icon === "rocket" ? (
@@ -41,7 +43,7 @@ export const About = () => {
                 {element.title}
               </div>
             </div>
-            <div className="text-lg text-[rgba(0,16,36,.9)] text-justify">
+            <div className="text-lg text-[rgba(0,16,36,.9)] ">
               {element.text}
             </div>
           </div>
