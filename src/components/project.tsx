@@ -7,12 +7,12 @@ export interface ProjectProps {
   technologies: string[];
   images: string[];
   typeOfImages: string;
-  github: string;
+  link: string;
   reverse: boolean;
 }
 
 export const Project: FunctionalComponent<ProjectProps> = (props) => {
-  const { title, description, technologies, images, reverse } =
+  const { title, description, technologies, images, reverse, link } =
     props;
 
   let technologiesString = "";
@@ -28,19 +28,23 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
       <div className="xl:w-1/2 flex place-content-center
       xl:px-10 sm:py-5 xl:py-10">
         <div className="xl:w-full max-h-[500px] flex place-content-center gap-4 sm:gap-10">
-          {
-            images.map((image, index) => (
-              <div className="bg-white/[.5] p-[3%] backdrop-blur shadow-big h-full w-auto rounded-3xl">
-                <img
-                  key={index}
-                  src={image}
-                  alt=""
-                  className="h-full w-auto object-cover relative overflow-hidden rounded-2xl"
-                />
-              </div>
-            ))
-          }
+          {images.map((image, index) => (
+            <div className="bg-white/[.5] p-[3%] backdrop-blur shadow-big h-full w-auto rounded-3xl relative group">
+              <img
+                key={index}
+                src={image}
+                alt=""
+                className="h-full w-auto object-cover relative overflow-hidden rounded-2xl"
+              />
+              {
+                link !== "" && (
+                  <a href={link} target="_blank" className="opacity-0 group-hover:opacity-100 backdrop-blur backdrop-opacity-75 cursor-pointer transition-opacity absolute top-0 left-0 h-full w-full flex items-center justify-center rounded-3xl bg-gray-100 bg-opacity-40"/>
+                )
+              }
+            </div>
+          ))}
         </div>
+
 
         {/* {typeOfImages === "desktop" ? (
           <img src={images[0]} alt="" className="
@@ -69,9 +73,13 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
           ))} */}
         </div>
         <div className="text-xl backdrop-blur">{description}</div>
-        <div className="flex justify-center mt-10">
-          <Button onPress={() => {}}>View on Github</Button>
-        </div>
+        {
+          link !== "" && (
+            <div className="flex justify-center mt-10">
+              <Button onPress={() => {window.open(link, "_blank");}}>View on Github</Button>
+          </div>
+          )
+        }
       </div>
     </div>
   );

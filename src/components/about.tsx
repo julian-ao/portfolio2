@@ -28,7 +28,7 @@ export const About = () => {
         return (
           <div
             key={index}
-            className="bg-white/[.75] p-8 rounded-2xl backdrop-blur shadow-small
+            className="bg-white/[.75] py-6 px-8 rounded-2xl backdrop-blur shadow-small
              w-[85%] md:w-[50%] xl:w-[25%] "
           >
             <div className="flex gap-4 items-center mb-3">

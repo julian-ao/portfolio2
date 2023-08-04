@@ -37,7 +37,16 @@ export const projects = [
       "./src/assets/images/iphone-screen.png",
     ],
     typeOfImages: "mobile",
-    github: "",
+    link: "",
+  } as ProjectProps,
+  {
+    title: "This portfolio",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    technologies: ["React", "TypeScript", "TailwindCSS", "Figma"],
+    images: ["./src/assets/images/portfolio2.jpg"],
+    typeOfImages: "desktop",
+    link: "https://github.com/julian-ao",
   } as ProjectProps,
   {
     title: "Previous portfolio",
@@ -46,7 +55,7 @@ export const projects = [
     technologies: ["React", "TailwindCSS", "TailwindCSS"],
     images: ["./src/assets/images/portfolio1Skills.jpg"],
     typeOfImages: "desktop",
-    github: "",
+    link: "https://github.com/julian-ao",
   } as ProjectProps,
   {
     title: "Password manager",
@@ -55,7 +64,7 @@ export const projects = [
     technologies: ["React", "TailwindCSS", "TailwindCSS"],
     images: ["./src/assets/images/portfolio1Skills.jpg"],
     typeOfImages: "desktop",
-    github: "",
+    link: "https://github.com/julian-ao",
   } as ProjectProps,
   {
     title: "Enua installer app",
@@ -68,6 +77,6 @@ export const projects = [
       "./src/assets/images/iphone-screen.png",
     ],
     typeOfImages: "mobile",
-    github: "",
+    link: "https://github.com/julian-ao",
   } as ProjectProps,
 ];
