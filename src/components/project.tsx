@@ -8,11 +8,12 @@ export interface ProjectProps {
   images: string[];
   typeOfImages: string;
   link: string;
+  buttonText: string;
   reverse: boolean;
 }
 
 export const Project: FunctionalComponent<ProjectProps> = (props) => {
-  const { title, description, technologies, images, reverse, link } =
+  const { title, description, technologies, images, reverse, link, buttonText } =
     props;
 
   let technologiesString = "";
@@ -38,7 +39,9 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
               />
               {
                 link !== "" && (
-                  <a href={link} target="_blank" className="opacity-0 group-hover:opacity-100 backdrop-blur backdrop-opacity-75 cursor-pointer transition-opacity absolute top-0 left-0 h-full w-full flex items-center justify-center rounded-3xl bg-gray-100 bg-opacity-40"/>
+                  <a href={link} target="_blank" className="opacity-0 group-hover:opacity-100 backdrop-blur backdrop-opacity-75 cursor-pointer transition-opacity absolute top-0 left-0 h-full w-full flex items-center justify-center rounded-3xl bg-gray-100 bg-opacity-40">
+                    {buttonText}
+                  </a>
                 )
               }
             </div>
@@ -76,7 +79,7 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
         {
           link !== "" && (
             <div className="flex justify-center mt-10">
-              <Button onPress={() => {window.open(link, "_blank");}}>View on Github</Button>
+              <Button onPress={() => {window.open(link, "_blank");}}>{buttonText}</Button>
           </div>
           )
         }
