@@ -29,7 +29,7 @@ export const Navbar = () => {
           <div>
             /
           </div>
-          <a href="https://github.com/Jotto2" target="_blank" className={aClassName}>
+          <a href="https://github.com/julian-ao" target="_blank" className={aClassName}>
             Github
           </a>
           <div>

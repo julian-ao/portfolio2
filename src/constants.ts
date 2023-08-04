@@ -33,7 +33,7 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: ["React Native", "TypeScript", "Scrum", "Figma"],
     images: [
-      "./src/assets/images/iphone.png",
+      "./src/assets/images/iphone-screen.png",
       "./src/assets/images/iphone-screen.png",
     ],
     typeOfImages: "mobile",
@@ -63,9 +63,9 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: ["React Native", "TypeScript", "Scrum", "Figma"],
     images: [
-      "./src/assets/images/iphone.png",
       "./src/assets/images/iphone-screen.png",
-      "./src/assets/images/iphone.png",
+      "./src/assets/images/iphone-screen.png",
+      "./src/assets/images/iphone-screen.png",
     ],
     typeOfImages: "mobile",
     github: "",

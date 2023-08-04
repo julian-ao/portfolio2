@@ -29,7 +29,7 @@ export const About = () => {
           <div
             key={index}
             className="bg-white/[.75] p-8 rounded-2xl backdrop-blur shadow-small
-             w-[50%] xl:w-[25%] "
+             w-[85%] md:w-[50%] xl:w-[25%] "
           >
             <div className="flex gap-4 items-center mb-3">
               {element.icon === "rocket" ? (
