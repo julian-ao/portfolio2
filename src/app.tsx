@@ -1,6 +1,5 @@
 import { About } from "./components/about";
 import { Background } from "./components/background";
-import { Footer } from "./components/footer";
 import { Intro } from "./components/intro";
 import { Navbar } from "./components/navbar";
 import { Projects } from "./components/projects";
