@@ -33,8 +33,8 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: ["React Native", "TypeScript", "Scrum", "Figma"],
     images: [
-      "./public/iphone-screen.png",
-      "./public/iphone-screen.png",
+      "./iphone-screen.png",
+      "./iphone-screen.png",
     ],
     typeOfImages: "mobile",
     link: "",
@@ -45,7 +45,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: ["React", "TypeScript", "TailwindCSS", "Figma"],
-    images: ["./public/portfolio2.jpg"],
+    images: ["./portfolio2.jpg"],
     typeOfImages: "desktop",
     link: "",
     buttonText: "Learn more",
@@ -55,7 +55,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: ["React", "TailwindCSS", "TailwindCSS"],
-    images: ["./public/portfolio1Skills.jpg"],
+    images: ["./portfolio1Skills.jpg"],
     typeOfImages: "desktop",
     link: "https://www.old.julianao.dev",
     buttonText: "View",
@@ -65,7 +65,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: ["React", "TailwindCSS", "TailwindCSS"],
-    images: ["./public/portfolio1Skills.jpg"],
+    images: ["./portfolio1Skills.jpg"],
     typeOfImages: "desktop",
     link: "https://github.com/julian-ao",
     buttonText: "View on Github",
@@ -76,9 +76,9 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: ["React Native", "TypeScript", "Scrum", "Figma"],
     images: [
-      "./public/iphone-screen.png",
-      "./public/iphone-screen.png",
-      "./public/iphone-screen.png",
+      "./iphone-screen.png",
+      "./iphone-screen.png",
+      "./iphone-screen.png",
     ],
     typeOfImages: "mobile",
     link: "https://github.com/julian-ao",
