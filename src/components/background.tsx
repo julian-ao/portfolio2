@@ -41,7 +41,7 @@ export const Background: preact.FunctionComponent<BackgroundProps> = ({
   }, []);
 
   return (
-    <div className="h-screen w-screen overflow-x-hidden bg-cover bg-opacity-25 bg-no-repeat bg-[url('./src/assets/images/background-colors.jpg')] font-manrope text-[#333333] flex place-content-center">
+    <div className="h-screen w-screen overflow-x-hidden bg-cover bg-opacity-25 bg-no-repeat bg-[url('./public/background-colors.jpg')] font-manrope text-[#333333] flex place-content-center">
       <div
         id="dots-container"
         className="top-0 left-0 w-screen h-screen fixed"
