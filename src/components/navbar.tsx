@@ -15,8 +15,8 @@ const openResume = () => {
 export const Navbar = () => {
   return (
     <div className="flex place-content-center">
-      <div className="flex w-full text-xl items-center
-        justify-end md:justify-between p-4 md:p-8">
+      <div className="flex w-full items-center
+        justify-end md:justify-between p-4 md:p-8 text-lg sm:text-xl ">
         <div className="tracking-wide font-normal
           hidden md:block">
           Julian Ammouche Ottosen

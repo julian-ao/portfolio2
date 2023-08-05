@@ -57,7 +57,7 @@ export const projects = [
     technologies: ["React", "TailwindCSS", "TailwindCSS"],
     images: ["./src/assets/images/portfolio1Skills.jpg"],
     typeOfImages: "desktop",
-    link: "https://github.com/julian-ao",
+    link: "https://www.old.julianao.dev",
     buttonText: "View",
   } as ProjectProps,
   {

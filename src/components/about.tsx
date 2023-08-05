@@ -39,11 +39,13 @@ export const About = () => {
               ) : element.icon === "user" ? (
                 <User className={iconClassName} />
               ) : null}
-              <div className="font-medium capitalize text-2xl font-outfit">
+              <div className="font-medium capitalize font-outfit
+              text-xl sm:text-2xl">
                 {element.title}
               </div>
             </div>
-            <div className="text-lg text-[rgba(0,16,36,.9)] ">
+            <div className="text-[rgba(0,16,36,.9)]
+            text-base sm:text-lg">
               {element.text}
             </div>
           </div>

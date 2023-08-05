@@ -65,8 +65,9 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
       </div>
 
       <div className="flex flex-col justify-center flex-1">
-        <div className="text-5xl font-outfit mb-5">{title}</div>
-        <div className="flex mb-8 backdrop-blur max-w-[100%] w-max text-xl">
+        <div className="font-outfit mb-5 text-4xl sm:text-5xl">{title}</div>
+        <div className="flex mb-8 backdrop-blur max-w-[100%] w-max
+        text-lg sm:text-xl">
           {technologiesString}
           {/* {technologies.map((tech, index) => (
             <div key={index} className="flex gap-2 text-xl">
@@ -75,7 +76,8 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
             </div>
           ))} */}
         </div>
-        <div className="text-xl backdrop-blur">{description}</div>
+        <div className="backdrop-blur
+        text-lg sm:text-xl">{description}</div>
         {
           link !== "" && (
             <div className="flex justify-center mt-10">
