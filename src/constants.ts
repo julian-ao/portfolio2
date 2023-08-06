@@ -17,7 +17,7 @@ export const aboutText = [
   {
     title: "Tech background",
     icon: "code",
-    text: "I'm currently pursuing a Bachelor's in informatics, which have given me a strong software engineering foundation. Proficient in TypeScript, Python, and Java, I've completed diverse projects in web development, mobile apps, and automation.",
+    text: "I'm currently pursuing a Bachelor's in informatics, which have given me a strong software engineering foundation. Proficient in TypeScript, Python, and Java, I've completed diverse projects in web development and mobile apps.",
   }, // My expertise in [Specific Area] is evident in [Project Name], where I achieved [Briefly Describe Accomplishment].
   {
     icon: "user",

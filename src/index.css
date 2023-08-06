@@ -69,3 +69,37 @@
 .underlineAnimation:focus::after{
 	transform: translate3d(0, 0, 0);
 }
+
+
+.background::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(#cce9ed,#c8d4e4, #f0d0e5, #f5eaf0, #ebf8f4);
+  background-size: 400% 400%;
+  animation: gradient 100s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* #d9f3fc, #d1fef4, #f5dbff, #fad3f4 */

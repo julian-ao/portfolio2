@@ -9,7 +9,7 @@ const aClassName = "flex place-content-center cursor-pointer duration-200 overfl
 //const iconClassName = "w-7 cursor-pointer duration-200 fill-[#595959]";
 
 const openResume = () => {
-    window.open("path/to/your/pdf_file.pdf", "_blank");
+    window.open("/resume.pdf", "_blank");
 };
 
 export const Navbar = () => {
