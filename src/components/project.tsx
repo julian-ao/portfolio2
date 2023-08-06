@@ -20,7 +20,9 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
   technologies.forEach((tech, index) => {
     technologiesString += tech;
     if (index !== technologies.length - 1) {
+      technologiesString += " ";
       technologiesString += " / ";
+      technologiesString += " ";
     }
   });
 
@@ -66,15 +68,15 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
 
       <div className="flex flex-col justify-center flex-1">
         <div className="font-outfit mb-5 text-4xl sm:text-5xl">{title}</div>
-        <div className="flex mb-8 backdrop-blur max-w-[100%] w-max
+        <div className="flex mb-8 backdrop-blur max-w-[100%] w-max flex-wrap
         text-lg sm:text-xl">
-          {technologiesString}
-          {/* {technologies.map((tech, index) => (
-            <div key={index} className="flex gap-2 text-xl">
+          {/*technologiesString*/}
+           {technologies.map((tech, index) => (
+            <div key={index} className="flex gap-2 text-xl mr-2">
               {tech}
               {index !== technologies.length - 1 && <div>/</div>}
             </div>
-          ))} */}
+          ))}
         </div>
         <div className="backdrop-blur
         text-lg sm:text-xl">{description}</div>
