@@ -7,6 +7,7 @@ interface MagicTextProps {
 export const MagicText: preact.FunctionComponent<MagicTextProps> = ({
   textArray,
 }) => {
+
   const [displayText, setDisplayText] = useState<string>("");
   const [currentTextIndex, setCurrentTextIndex] = useState<number>(0);
   const [writing, setWriting] = useState<boolean>(true);
@@ -51,7 +52,7 @@ export const MagicText: preact.FunctionComponent<MagicTextProps> = ({
     <div className="flex items-center max-w-[100%]
       mb-0 md:mb-32 mt-[-20px] md:mt-10">
       <span className="h-[72px] animate-background-pan bg-gradient-to-r bg-clip-text text-transparent whitespace-nowrap font-bold w-full break-words
-        text-5xl md:text-7xl max-[500px]:text-4xl">
+        text-5xl md:text-7xl max-[500px]:text-2xl">
         {displayText}
       </span>
     </div>

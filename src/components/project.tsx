@@ -8,6 +8,7 @@ export interface ProjectProps {
   images: string[];
   typeOfImages: string;
   link: string;
+  githubLink: string;
   buttonText: string;
   reverse: boolean;
 }
@@ -31,21 +32,21 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
       <div className="xl:w-1/2 flex place-content-center
       xl:px-10 sm:py-5 xl:py-10">
         <div className="xl:w-full max-h-[500px] flex place-content-center gap-4 sm:gap-10">
-          {images.map((image, index) => (
-            <div className="bg-white/[.5] p-[3%] backdrop-blur shadow-big h-full w-auto rounded-3xl relative group">
+          {images.map((image, index) => ( // p-[3%]
+            <div className="bg-white/[.5] backdrop-blur shadow-big rounded-3xl relative group p-2 h-full">
               <img
                 key={index}
                 src={image}
                 alt=""
-                className="h-full w-auto object-cover relative overflow-hidden rounded-2xl"
+                className="h-full object-cover rounded-2xl"
               />
-              {
+              {/* {
                 link !== "" && (
-                  <a href={link} target="_blank" className="opacity-0 group-hover:opacity-100 backdrop-blur backdrop-opacity-75 cursor-pointer transition-opacity absolute top-0 left-0 h-full w-full flex items-center justify-center rounded-3xl bg-gray-100 bg-opacity-40">
+                  <a href={link} target="_blank" className="opacity-0 group-hover:opacity-100 backdrop-blur backdrop-opacity-75 cursor-pointer transition-opacity absolute top-0 left-0 h-full w-full flex items-center justify-center bg-gray-100 bg-opacity-40">
                     {buttonText}
                   </a>
                 )
-              }
+              } */}
             </div>
           ))}
         </div>

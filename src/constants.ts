@@ -2,11 +2,19 @@ import { ProjectProps } from "./components/project";
 
 export const hiText = "Hi, I'm Julian 👋";
 
-export const magicText = [
+const titleArray = [
   "Frontend developer",
   "Informatics student",
   "Software developer",
+  "Web developer",
+  "Mobile App Developer",
+  "Problem solver",
+  "Programming Enthusiast",
 ];
+
+export const magicText = titleArray.sort(() => Math.random() - 0.5);
+
+
 export const aboutText = [
   {
     title: "Introduction",
@@ -38,36 +46,40 @@ export const projects = [
     ],
     typeOfImages: "mobile",
     link: "",
+    githubLink: "",
     buttonText: "Learn more",
   } as ProjectProps,
   {
     title: "This portfolio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Embodying \"less is more,\" my portfolio's clean design emphasizes both elegant interfaces and responsive navigation. It shines on every device, promising an immersive experience for all visitors",
     technologies: ["React", "TypeScript", "TailwindCSS", "Figma"],
-    images: ["./portfolio2.jpg"],
+    images: ["./portfolio2.jpg", "./portfolio2_phone.jpg",],
     typeOfImages: "desktop",
     link: "",
+    githubLink: "https://github.com/julian-ao",
     buttonText: "Learn more",
   } as ProjectProps,
   {
     title: "Previous portfolio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "In my early days of learning React, I built a clean and responsive portfolio to showcase my skills and projects. It was a platform where I could exhibit my growing skills while emphasizing user-friendly design.",
     technologies: ["React", "TailwindCSS", "TailwindCSS"],
-    images: ["./portfolio1Skills.jpg"],
+    images: ["./portfolio1Skills.jpg", "./portfolio1_phone.jpg"],
     typeOfImages: "desktop",
     link: "https://www.old.julianao.dev",
+    githubLink: "https://github.com/julian-ao",
     buttonText: "View",
   } as ProjectProps,
   {
     title: "Password manager",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    technologies: ["React", "TailwindCSS", "TailwindCSS"],
-    images: ["./portfolio1Skills.jpg"],
+      "Collaborating with a group of fellow students, I contributed to the development of a robust password manager project. Our goal was to create a secure and efficient solution for managing and storing passwords. By leveraging our combined skills, we engineered a user-friendly interface that allowed users to securely store, generate, and organize their passwords.",
+    technologies: ["Java", "JavaFX", "Maven", "Figma"],
+    images: ["./passwordManager.jpg"],
     typeOfImages: "desktop",
     link: "https://github.com/julian-ao",
+    githubLink: "https://github.com/julian-ao",
     buttonText: "View on Github",
   } as ProjectProps,
   {
@@ -82,6 +94,7 @@ export const projects = [
     ],
     typeOfImages: "mobile",
     link: "https://github.com/julian-ao",
+    githubLink: "https://github.com/julian-ao",
     buttonText: "View on Github",
   } as ProjectProps,
 ];

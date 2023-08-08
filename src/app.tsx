@@ -1,4 +1,3 @@
-import { About } from "./components/about";
 import { Background } from "./components/background";
 import { Intro } from "./components/intro";
 import { Navbar } from "./components/navbar";
@@ -9,7 +8,6 @@ export const App = () => {
     <Background>
       <Navbar />
       <Intro />
-      <About />
       <Projects />
       <Navbar />
     </Background>
