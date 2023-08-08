@@ -38,9 +38,10 @@ export const projects = [
   {
     title: "Enua installer app",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "During my summer internship at Enua, I was part of a project to create a React Native mobile app for both Android and iOS. The app was designed to assist electricians in installing Enua's wall mount for electric car chargers. Following the Scrum methodology, we iteratively developed the app, incorporating user feedback. The outcome was a user-friendly utility that optimized the installation procedure, emphasizing the significance of effective teamwork and the integration of technology in real-world solutions.",
     technologies: ["React Native", "TypeScript", "Scrum", "Figma"],
     images: [
+      "./iphone-screen.png",
       "./iphone-screen.png",
       "./iphone-screen.png",
     ],
@@ -48,6 +49,28 @@ export const projects = [
     link: "",
     githubLink: "",
     buttonText: "Learn more",
+  } as ProjectProps,
+  {
+    title: "Password manager",
+    description:
+      "Collaborating with a group of fellow students, I contributed to the development of a robust password manager project. Our goal was to create a secure and efficient solution for managing and storing passwords. By leveraging our combined skills, we engineered a user-friendly interface that allowed users to securely store, generate, and organize their passwords.",
+    technologies: ["Java", "JavaFX", "Maven", "Figma"],
+    images: ["./passwordManager.jpg"],
+    typeOfImages: "desktop",
+    link: "https://github.com/julian-ao",
+    githubLink: "https://github.com/julian-ao",
+    buttonText: "View on Github",
+  } as ProjectProps,
+  {
+    title: "Social training application",
+    description:
+      "Collaborated in a team of 6 using Scrum to develop a social training app. Built with Next.js for a dynamic frontend and Google Firebase for seamless backend integration. The app enables users to set fitness goals, track progress, and connect with a community. Emphasis on iterative development ensured user-centric features.",
+    technologies: ["Next.js", "Google Firebase", "Scrum"],
+    images: ["./strev.jpg"],
+    typeOfImages: "desktop",
+    link: "https://github.com/julian-ao",
+    githubLink: "https://github.com/julian-ao",
+    buttonText: "View on Github",
   } as ProjectProps,
   {
     title: "This portfolio",
@@ -70,31 +93,5 @@ export const projects = [
     link: "https://www.old.julianao.dev",
     githubLink: "https://github.com/julian-ao",
     buttonText: "View",
-  } as ProjectProps,
-  {
-    title: "Password manager",
-    description:
-      "Collaborating with a group of fellow students, I contributed to the development of a robust password manager project. Our goal was to create a secure and efficient solution for managing and storing passwords. By leveraging our combined skills, we engineered a user-friendly interface that allowed users to securely store, generate, and organize their passwords.",
-    technologies: ["Java", "JavaFX", "Maven", "Figma"],
-    images: ["./passwordManager.jpg"],
-    typeOfImages: "desktop",
-    link: "https://github.com/julian-ao",
-    githubLink: "https://github.com/julian-ao",
-    buttonText: "View on Github",
-  } as ProjectProps,
-  {
-    title: "Enua installer app",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    technologies: ["React Native", "TypeScript", "Scrum", "Figma"],
-    images: [
-      "./iphone-screen.png",
-      "./iphone-screen.png",
-      "./iphone-screen.png",
-    ],
-    typeOfImages: "mobile",
-    link: "https://github.com/julian-ao",
-    githubLink: "https://github.com/julian-ao",
-    buttonText: "View on Github",
   } as ProjectProps,
 ];
