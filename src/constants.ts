@@ -35,7 +35,7 @@ export const aboutText = [
 ];
 
 export const projects = [
-  {
+  /*{
     title: "Enua installer app",
     description:
       "During my summer internship at Enua, I was part of a project to create a React Native mobile app for both Android and iOS. The app was designed to assist electricians in installing Enua's wall mount for electric car chargers. Following the Scrum methodology, we iteratively developed the app, incorporating user feedback. The outcome was a user-friendly utility that optimized the installation procedure, emphasizing the significance of effective teamwork and the integration of technology in real-world solutions.",
@@ -49,7 +49,7 @@ export const projects = [
     link: "",
     githubLink: "",
     buttonText: "Learn more",
-  } as ProjectProps,
+  } as ProjectProps,*/
   {
     title: "Password manager",
     description:
