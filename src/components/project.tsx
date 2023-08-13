@@ -57,7 +57,7 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
                   key={index}
                   src={image}
                   alt=""
-                  className="h-full object-cover rounded-2xl"
+                  className="h-full object-cover rounded-2xl select-none"
                 />
                 {/* {
                 link !== "" && (
