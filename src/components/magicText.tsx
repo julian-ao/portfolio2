@@ -53,7 +53,7 @@ export const MagicText: preact.FunctionComponent<MagicTextProps> = ({
       mb-0 md:mb-32 mt-[-20px] md:mt-10"
     >
       <span
-        className="h-[72px] animate-background-pan bg-gradient-to-r bg-clip-text text-transparent whitespace-nowrap font-bold w-full break-words
+        className="h-[60px] md:h-[82px] animate-background-pan bg-gradient-to-r bg-clip-text text-transparent whitespace-nowrap font-bold w-full break-words
         text-5xl md:text-7xl max-[500px]:text-2xl"
       >
         {displayText}
