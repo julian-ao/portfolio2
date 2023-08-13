@@ -9,10 +9,10 @@ export const Background: preact.FunctionComponent<BackgroundProps> = ({
   children,
 }) => {
   useEffect(() => {
-    const numRows = 25;
     const container = document.getElementById("dots-container");
 
     const handleResize = () => {
+      let numRows = window.innerHeight / 40;
       let numCols = numRows * (window.innerWidth / window.innerHeight);
       // Remove the existing dots before adding new ones on resize
       while (container?.firstChild) {
