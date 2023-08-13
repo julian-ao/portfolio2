@@ -57,8 +57,8 @@ export const projects = [
     technologies: ["Java", "JavaFX", "Maven", "Figma"],
     images: ["./passwordManager.jpg"],
     typeOfImages: "desktop",
-    link: "https://github.com/julian-ao",
-    githubLink: "https://github.com/julian-ao",
+    link: "https://github.com/julian-ao/password-manager",
+    githubLink: "https://github.com/julian-ao/password-manager",
     buttonText: "View on Github",
   } as ProjectProps,
   {
@@ -68,8 +68,8 @@ export const projects = [
     technologies: ["Next.js", "Google Firebase", "Scrum"],
     images: ["./strev.jpg"],
     typeOfImages: "desktop",
-    link: "https://github.com/julian-ao",
-    githubLink: "https://github.com/julian-ao",
+    link: "https://github.com/julian-ao/strev",
+    githubLink: "https://github.com/julian-ao/strev",
     buttonText: "View on Github",
   } as ProjectProps,
   {
@@ -79,9 +79,9 @@ export const projects = [
     technologies: ["React", "TypeScript", "TailwindCSS", "Figma"],
     images: ["./portfolio2.jpg", "./portfolio2_phone.jpg",],
     typeOfImages: "desktop",
-    link: "",
-    githubLink: "https://github.com/julian-ao",
-    buttonText: "Learn more",
+    link: "https://github.com/julian-ao/portfolio2",
+    githubLink: "https://github.com/julian-ao/portfolio2",
+    buttonText: "View on Github",
   } as ProjectProps,
   {
     title: "Previous portfolio",
@@ -91,7 +91,7 @@ export const projects = [
     images: ["./portfolio1Skills.jpg", "./portfolio1_phone.jpg"],
     typeOfImages: "desktop",
     link: "https://www.old.julianao.dev",
-    githubLink: "https://github.com/julian-ao",
+    githubLink: "https://github.com/julian-ao/portfolio",
     buttonText: "View",
   } as ProjectProps,
 ];
