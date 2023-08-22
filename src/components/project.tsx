@@ -52,12 +52,12 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
               image,
               index, // p-[3%]
             ) => (
-              <div className="bg-white/[.5] backdrop-blur shadow-big rounded-3xl relative group p-2 h-full">
+              <div className="bg-white/[.5] backdrop-blur overflow-hidden shadow-big rounded-3xl relative group p-2 h-full">
                 <img
                   key={index}
                   src={image}
                   alt=""
-                  className="h-full object-cover rounded-2xl select-none"
+                  className="h-full object-cover max-h-[500px] rounded-2xl select-none"
                 />
                 {/* {
                 link !== "" && (
