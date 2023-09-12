@@ -72,7 +72,7 @@ export const projects = [
     githubLink: "https://github.com/julian-ao/strev",
     buttonText: "View on Github",
   } as ProjectProps,
-  {
+  /* {
     title: "This portfolio",
     description:
       "Embodying \"less is more,\" my portfolio's clean design emphasizes both elegant interfaces and responsive navigation. It shines on every device, promising an immersive experience for all visitors",
@@ -82,8 +82,8 @@ export const projects = [
     link: "https://github.com/julian-ao/portfolio2",
     githubLink: "https://github.com/julian-ao/portfolio2",
     buttonText: "View on Github",
-  } as ProjectProps,
-  {
+  } as ProjectProps, */
+  /* {
     title: "Previous portfolio",
     description:
       "In my early days of learning React, I built a clean and responsive portfolio to showcase my skills and projects. It was a platform where I could exhibit my growing skills while emphasizing user-friendly design.",
@@ -93,5 +93,5 @@ export const projects = [
     link: "https://www.old.julianao.dev",
     githubLink: "https://github.com/julian-ao/portfolio",
     buttonText: "View",
-  } as ProjectProps,
+  } as ProjectProps, */
 ];

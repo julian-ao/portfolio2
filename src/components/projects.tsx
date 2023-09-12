@@ -1,4 +1,5 @@
 import { projects } from "../constants";
+import { Button } from "./button";
 import { Project } from "./project";
 
 export const Projects = () => {
@@ -11,6 +12,9 @@ export const Projects = () => {
       {projects.map((project, index) => {
         return <Project key={index} {...project} reverse={index % 2 === 1} />;
       })}
+      <Button onPress={() => window.open("https://github.com/julian-ao", "_blank")}>
+        View more
+      </Button>
     </div>
   );
 };
