@@ -35,6 +35,17 @@ export const aboutText = [
 ];
 
 export const projects = [
+    {
+      title: "Weather app",
+      description:
+        "In a team of four, I created a user-friendly weather application that integrates two REST APIs to provide comprehensive weather information for locations across Norway.",
+      technologies: ["React", "TypeScript", "Vite", "TanStack", "Figma"],
+      images: ["./sludd-search-desktop.jpg", "./sludd-phone.jpg"],
+      typeOfImages: "desktop",
+      link: "",
+      githubLink: "",
+      buttonText: "",
+    } as ProjectProps,
   /*{
     title: "Enua installer app",
     description:
