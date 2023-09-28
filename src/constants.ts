@@ -46,6 +46,17 @@ export const projects = [
       githubLink: "",
       buttonText: "",
     } as ProjectProps,
+    {
+      title: "Running week website",
+      description:
+        "Led frontend development for a week-long charity run supporting the Children's Cancer Association. Created a user-friendly website with features for event registration, donations, and participant tracking through Strava API integration.",
+      technologies: ["React", "Figma"],
+      images: ["./marathon-top-phone.jpg", "./marathon-mid-desktop.jpg"],
+      typeOfImages: "desktop",
+      link: "https://github.com/appKom/online-maraton",
+      githubLink: "https://github.com/appKom/online-maraton",
+      buttonText: "View on Github",
+    } as ProjectProps,
   /*{
     title: "Enua installer app",
     description:
