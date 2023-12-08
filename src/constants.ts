@@ -36,7 +36,8 @@ export const aboutText = [
 export const projects = [
   {
     title: '"DumBass" | Music app',
-    description: '',
+    description:
+      'A website with songs lyrics and artist information, offering features like rating, favoriting, and robust search and filter options. Users can log in to personalize their experience.',
     technologies: ['MongoDB', 'Express', 'GraphQL', 'React', 'TypeScript'],
     images: ['./dumbass-home.png', './dumbass-song.png'],
     typeOfImages: 'desktop',
@@ -58,7 +59,7 @@ export const projects = [
   {
     title: 'Running week website',
     description:
-      "Led frontend development for a week-long charity run supporting the Children's Cancer Association. Created a user-friendly website with features for event registration, donations, and participant tracking through Strava API integration.",
+      "Developed a website for a week-long charity run supporting the Children's Cancer Association, featuring registration, donations, and participant tracking via Strava API.",
     technologies: ['React', 'Figma'],
     images: ['./marathon-top-phone.jpg', './marathon-mid-desktop.jpg'],
     typeOfImages: 'desktop',
@@ -92,7 +93,7 @@ export const projects = [
     githubLink: 'https://github.com/julian-ao/password-manager',
     buttonText: 'View on Github',
   } as ProjectProps,
-  {
+  /* {
     title: 'Social training application',
     description:
       'Collaborated in a team of 6 using Scrum to develop a social training app. Built with Next.js for a dynamic frontend and Google Firebase for seamless backend integration. The app enables users to set fitness goals, track progress, and connect with a community. Emphasis on iterative development ensured user-centric features.',
@@ -102,7 +103,7 @@ export const projects = [
     link: 'https://github.com/julian-ao/strev',
     githubLink: 'https://github.com/julian-ao/strev',
     buttonText: 'View on Github',
-  } as ProjectProps,
+  } as ProjectProps, */
   /* {
     title: "This portfolio",
     description:
