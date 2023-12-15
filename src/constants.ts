@@ -39,18 +39,42 @@ export const projects = [
     description:
       'A website with songs lyrics and artist information, offering features like rating, favoriting, and robust search and filter options. Users can log in to personalize their experience.',
     technologies: ['MongoDB', 'Express', 'GraphQL', 'React', 'TypeScript'],
-    images: ['./dumbass-home.png', './dumbass-song.png'],
+    images: ['./projects/dumbass-home.png', './projects/dumbass-song.png'],
     typeOfImages: 'desktop',
     link: 'https://github.com/julian-ao/dumbass',
     githubLink: 'https://github.com/julian-ao/dumbass',
     buttonText: 'View on Github',
   },
   {
+    title: 'Enua Electrician App',
+    description:
+      'During my summer internship at Enua, a collegue and I developed the frontend for a mobile app for electricians installing the Enua wallmount. Utilizing Scrum and multiple user tests, we tailored the app to closely align with user needs, resulting in a product I am truly proud of.',
+    technologies: [
+      'React Native',
+      'TypeScript',
+      'User Testing',
+      'Scrum',
+      'Figma',
+    ],
+    images: [
+      './projects/electricianapp/home.jpg',
+      './projects/electricianapp/edit-facilities.jpg',
+      './projects/electricianapp/nfc.jpg',
+    ],
+    typeOfImages: 'desktop',
+    link: '',
+    githubLink: '',
+    buttonText: '',
+  },
+  {
     title: '"Sludd" | Weather app',
     description: '',
     //'In a team of four, I created a user-friendly weather application that integrates two REST APIs to provide comprehensive weather information for locations across Norway.',
     technologies: ['React', 'TypeScript', 'Vite', 'TanStack', 'Figma'],
-    images: ['./sludd-search-desktop.jpg', './sludd-phone.jpg'],
+    images: [
+      './projects/sludd/sludd-search-desktop.jpg',
+      './projects/sludd/sludd-phone.jpg',
+    ],
     typeOfImages: 'desktop',
     link: 'https://github.com/julian-ao/sludd',
     githubLink: 'https://github.com/julian-ao/sludd',
@@ -61,7 +85,10 @@ export const projects = [
     description:
       "Developed a website for a week-long charity run supporting the Children's Cancer Association, featuring registration, donations, and participant tracking via Strava API.",
     technologies: ['React', 'Figma'],
-    images: ['./marathon-top-phone.jpg', './marathon-mid-desktop.jpg'],
+    images: [
+      './projects/marathon/marathon-top-phone.jpg',
+      './projects/marathon/marathon-mid-desktop.jpg',
+    ],
     typeOfImages: 'desktop',
     link: 'https://github.com/appKom/online-maraton',
     githubLink: 'https://github.com/appKom/online-maraton',
@@ -85,7 +112,7 @@ export const projects = [
   {
     title: 'Password manager',
     description:
-      'Collaborating with a group of fellow students, I contributed to the development of a robust password manager project. Our goal was to create a secure and efficient solution for managing and storing passwords. By leveraging our combined skills, we engineered a user-friendly interface that allowed users to securely store, generate, and organize their passwords.',
+      'Collaborating with a group of students, I contributed to the development of a robust password manager project. Our goal was to create a secure and efficient solution for managing and storing passwords. By using our combined skills, we developed a user-friendly app that allowed users to securely store, generate, and organize their passwords.',
     technologies: ['Java', 'JavaFX', 'Maven', 'Figma'],
     images: ['./passwordManager.jpg'],
     typeOfImages: 'desktop',
@@ -120,7 +147,7 @@ export const projects = [
     description:
       "In my early days of learning React, I built a clean and responsive portfolio to showcase my skills and projects. It was a platform where I could exhibit my growing skills while emphasizing user-friendly design.",
     technologies: ["React", "TailwindCSS", "TailwindCSS"],
-    images: ["./portfolio1Skills.jpg", "./portfolio1_phone.jpg"],
+    images: ["./portfolio1/portfolio1Skills.jpg", "./portfolio1/portfolio1_phone.jpg"],
     typeOfImages: "desktop",
     link: "https://www.old.julianao.dev",
     githubLink: "https://github.com/julian-ao/portfolio",
