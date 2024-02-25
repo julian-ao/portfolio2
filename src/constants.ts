@@ -48,7 +48,7 @@ export const projects = [
   {
     title: 'Enua Electrician App',
     description:
-      'During my summer internship at Enua, a collegue and I developed the frontend for a mobile app for electricians installing the Enua wallmount. Utilizing Scrum and multiple user tests, we tailored the app to closely align with user needs, resulting in a product I am truly proud of.',
+      'During my summer internship at Enua, a collegue and I developed the frontend for a mobile app for electricians installing the Enua wallmount. Utilizing Scrum and multiple user tests, we tailored the app to closely align with user needs, resulting in a product I am proud of.',
     technologies: [
       'React Native',
       'TypeScript',
@@ -112,9 +112,9 @@ export const projects = [
   {
     title: 'Password manager',
     description:
-      'Collaborating with a group of students, I contributed to the development of a robust password manager project. Our goal was to create a secure and efficient solution for managing and storing passwords. By using our combined skills, we developed a user-friendly app that allowed users to securely store, generate, and organize their passwords.',
+      'Collaborating with a group of students, I contributed to the development of a password manager application. Our goal was to create a secure and efficient solution for managing and storing passwords. By using our combined skills, we developed a user-friendly app that allowed users to securely store, generate, and organize their passwords.',
     technologies: ['Java', 'JavaFX', 'Maven', 'Figma'],
-    images: ['./passwordManager.jpg'],
+    images: ['./projects/passwordManager.jpg'],
     typeOfImages: 'desktop',
     link: 'https://github.com/julian-ao/password-manager',
     githubLink: 'https://github.com/julian-ao/password-manager',
