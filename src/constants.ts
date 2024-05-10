@@ -33,7 +33,20 @@ export const aboutText = [
   }, // As a software developer, I bring valuable traits to the table. I excel in collaboration, effective communication, and constructive contributions within diverse teams.With an insatiable thirst for knowledge, I continuously seek opportunities for learning and self-improvement, staying at the forefront of cutting-edge developments in the software industry.
 ];
 
-export const projects = [
+export const projects = [,
+  {
+    title: "Reflection Tool",
+    description:
+      "For my bachelors project, me and six other students developed the Reflection Tool for NTNU. Reflection Tool is a platform where students can reflect on their learning experiences, and lecturers get summary feedback reports on each of their lectures.",
+    technologies: ["Svelte", "TypeScript", "Python FastAPI", "Docker", "PostgreSQL"],
+    images: [
+      "./projects/reflection-tool/coursePage.png",
+    ],
+    typeOfImages: "desktop",
+    link: "https://github.com/julian-ao/reflection-tool",
+    githubLink: "https://github.com/julian-ao/reflection-tool",
+    buttonText: "Learn more",
+  } as ProjectProps,
   {
     title: '"DumBass" | Music app',
     description:
@@ -44,7 +57,7 @@ export const projects = [
     link: 'https://github.com/julian-ao/dumbass',
     githubLink: 'https://github.com/julian-ao/dumbass',
     buttonText: 'View on Github',
-  },
+  } as ProjectProps,
   {
     title: 'Enua Electrician App',
     description:
@@ -65,8 +78,8 @@ export const projects = [
     link: '',
     githubLink: '',
     buttonText: '',
-  },
-  {
+  } as ProjectProps,
+  /* {
     title: '"Sludd" | Weather app',
     description: '',
     //'In a team of four, I created a user-friendly weather application that integrates two REST APIs to provide comprehensive weather information for locations across Norway.',
@@ -79,8 +92,8 @@ export const projects = [
     link: 'https://github.com/julian-ao/sludd',
     githubLink: 'https://github.com/julian-ao/sludd',
     buttonText: 'View on Github',
-  } as ProjectProps,
-  {
+  } as ProjectProps, */
+  /* {
     title: 'Running week website',
     description:
       "Developed a website for a week-long charity run supporting the Children's Cancer Association, featuring registration, donations, and participant tracking via Strava API.",
@@ -93,7 +106,7 @@ export const projects = [
     link: 'https://github.com/appKom/online-maraton',
     githubLink: 'https://github.com/appKom/online-maraton',
     buttonText: 'View on Github',
-  } as ProjectProps,
+  } as ProjectProps, */
   /*{
     title: "Enua installer app",
     description:
@@ -109,7 +122,7 @@ export const projects = [
     githubLink: "",
     buttonText: "Learn more",
   } as ProjectProps,*/
-  {
+  /* {
     title: 'Password manager',
     description:
       'Collaborating with a group of students, I contributed to the development of a password manager application. Our goal was to create a secure and efficient solution for managing and storing passwords. By using our combined skills, we developed a user-friendly app that allowed users to securely store, generate, and organize their passwords.',
@@ -119,7 +132,7 @@ export const projects = [
     link: 'https://github.com/julian-ao/password-manager',
     githubLink: 'https://github.com/julian-ao/password-manager',
     buttonText: 'View on Github',
-  } as ProjectProps,
+  } as ProjectProps, */
   /* {
     title: 'Social training application',
     description:
