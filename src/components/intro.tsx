@@ -14,7 +14,7 @@ export const Intro = () => {
     <div className="flex flex-col justify-center items-center gap-10 w-full h-screen">
       <div className="flex flex-col items-center gap-5">
         <img
-          src="./enua_profile.jpg"
+          src="./headshot3.jpg"
           className="rounded-full h-52 shadow-big select-none"
         />
         <div className="text-xl font-medium">{hiText}</div>
