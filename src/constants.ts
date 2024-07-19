@@ -37,7 +37,7 @@ export const projects = [,
   {
     title: "Reflection Tool",
     description:
-      "For my bachelors project, me and six other students developed the Reflection Tool for NTNU. Reflection Tool is a platform where students can reflect on their learning experiences, and lecturers get summary feedback reports on each of their lectures.",
+      "For my bachelors project, me and six other students developed the Reflection Tool for NTNU. Reflection Tool is a platform where students can reflect on their learning experiences, and professors get summary feedback reports on each of their lectures.",
     technologies: ["Svelte", "TypeScript", "Python FastAPI", "Docker", "PostgreSQL"],
     images: [
       "./projects/reflection-tool/coursePage_optimized.png",
@@ -50,7 +50,7 @@ export const projects = [,
   {
     title: '"DumBass" | Music app',
     description:
-      'A website with songs lyrics and artist information, offering features like rating, favoriting, and robust search and filter options. Users can log in to personalize their experience.',
+      'A website with songs lyrics and artist information, offering features like rating, favoriting, and search and filter options. Users can log in to personalize their experience.',
     technologies: ['MongoDB', 'Express', 'GraphQL', 'React', 'TypeScript'],
     images: ['./projects/dumbass/dumbass-home_optimized.png', './projects/dumbass/dumbass-song.png'],
     typeOfImages: 'desktop',
