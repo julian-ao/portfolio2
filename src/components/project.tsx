@@ -107,9 +107,8 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
         {link !== "" && (
           <div className="flex justify-center mt-10">
             <Button
-              onPress={() => {
-                window.open(link, "_blank");
-              }}
+              tag="a"
+              href={link}
             >
               {buttonText}
             </Button>

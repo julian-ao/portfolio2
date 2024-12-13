@@ -20,7 +20,10 @@ export const Projects = () => {
           />
         );
       })}
-      <Button onPress={() => window.open("https://github.com/julian-ao", "_blank")}>
+      <Button
+        tag="a"
+        href="https://github.com/julian-ao"
+      >
         View more
       </Button>
     </div>

@@ -9,10 +9,6 @@ const aClassName =
 
 //const iconClassName = "w-7 cursor-pointer duration-200 fill-[#595959]";
 
-const openResume = () => {
-  window.open("/julian_ammouche_ottosen_resume.pdf", "_blank");
-};
-
 export const Navbar = () => {
   return (
     <div className="flex place-content-center">
@@ -46,9 +42,13 @@ export const Navbar = () => {
             Github
           </a>
           <div>/</div>
-          <div onClick={openResume} className={aClassName}>
+          <a
+            href="/julian_ammouche_ottosen_resume.pdf"
+            target="_blank"
+            className={aClassName}
+          >
             Resume
-          </div>
+          </a>
         </div>
       </div>
     </div>
