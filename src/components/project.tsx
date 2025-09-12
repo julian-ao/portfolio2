@@ -1,5 +1,6 @@
 import { FunctionalComponent } from "preact";
 import { Button } from "./button";
+import clsx from "clsx";
 
 export interface ProjectProps {
   title: string;
@@ -11,6 +12,7 @@ export interface ProjectProps {
   githubLink: string;
   buttonText: string;
   reverse: boolean;
+  imageBorder: boolean;
 }
 
 export const Project: FunctionalComponent<ProjectProps> = (props) => {
@@ -22,6 +24,7 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
     reverse,
     link,
     buttonText,
+    imageBorder = true,
   } = props;
 
   let technologiesString = "";
@@ -52,7 +55,7 @@ export const Project: FunctionalComponent<ProjectProps> = (props) => {
               image,
               index, // p-[3%]
             ) => (
-              <div className="bg-white/[.5] backdrop-blur overflow-hidden shadow-big rounded-3xl relative group p-2 h-full">
+              <div className={clsx(imageBorder && "bg-white/[.5] backdrop-blur overflow-hidden shadow-big rounded-3xl relative group p-2 h-full")}>
                 <img
                   key={index}
                   src={image}

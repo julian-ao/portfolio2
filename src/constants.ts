@@ -33,7 +33,22 @@ export const aboutText = [
   }, // As a software developer, I bring valuable traits to the table. I excel in collaboration, effective communication, and constructive contributions within diverse teams.With an insatiable thirst for knowledge, I continuously seek opportunities for learning and self-improvement, staying at the forefront of cutting-edge developments in the software industry.
 ];
 
-export const projects = [,
+export const projects = [
+  {
+    title: "ssesh Mobile App",
+    description:
+      "Contribute to the development of a mobile app for creating good study habits for students.",
+    technologies: ["Flutter", "Dart", "Figma", "gRPC"],
+    images: [
+      "./projects/ssesh/group.png",
+      "./projects/ssesh/leaderboard.png",
+      "./projects/ssesh/session.png",
+    ],
+    imageBorder: false,
+    typeOfImages: "mobile",
+    link: "https://www.ssesh.no/",
+    buttonText: "Visit website",
+  } as ProjectProps,
   {
     title: "Reflection Tool",
     description:
@@ -83,7 +98,7 @@ export const projects = [,
     buttonText: 'View on App Store',
   } as ProjectProps,
   {
-    title: '"DumBass" | Music app',
+    title: '"DumBass" Music App',
     description:
       'A website with songs lyrics and artist information, offering features like rating, favoriting, and search and filter options. Users can log in to personalize their experience.',
     technologies: ['MongoDB', 'Express', 'GraphQL', 'React', 'TypeScript'],

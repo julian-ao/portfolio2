@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react"
 export const App = () => {
   return (
     <Background>
-      <Analytics/>
+      <Analytics />
       <Navbar />
       <Intro />
       <Projects />
